@@ -1,10 +1,12 @@
 import React from 'react';
+import Footer from '../components/footer';
 
 const BlogPage = ()=> {
     return(
         <div>
             <h1>Blog</h1>
             <p>Post will show up here late on.</p>
+            <Footer/>
         </div>
     )
 }
