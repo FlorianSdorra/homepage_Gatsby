@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
-import footer from '../components/footer';
 import Footer from '../components/footer';
+import '../styles/index.css'
 
 const Layout = (props) => {
     return (
