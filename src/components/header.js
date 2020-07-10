@@ -14,10 +14,12 @@ const Header = () => {
         }
     `)
 
+    const author = data.site.siteMetadata.author;
+
     return (
         <header className={headerStyles.header}>
             <h1>
-                <Link  className={headerStyles.title}to="/">{data.site.siteMetadata.author}</Link>
+                <Link  className={headerStyles.title}to="/">{author}</Link>
             </h1>
             <nav>
                 <ul className={headerStyles.navList}>
