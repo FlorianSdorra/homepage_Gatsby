@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 const Blog = () => {
     return (
         <Layout>
-            This is the blog template!
+            blog template
         </Layout>
     )
 }
