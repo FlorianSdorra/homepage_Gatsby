@@ -5,6 +5,8 @@ date: "2020-08-07"
 
 Thats the first post!
 
+![picture](./unsplash.png)
+
 ## What I did today
 
 1. had a good healthy juice
