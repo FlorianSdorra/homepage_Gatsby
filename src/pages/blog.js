@@ -21,7 +21,7 @@ const BlogPage = ()=> {
               publishedDate(formatString: "MMMM Do, YYYY")
             }
           }
-        }
+        } 
       }
     `)
 
