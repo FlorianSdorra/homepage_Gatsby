@@ -11,6 +11,17 @@ module.exports = {
     author: 'Florian Sdorra'
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Baloo Tamma 2\:400,500,600,700,800`,
+          `limelight`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-contentful`,
