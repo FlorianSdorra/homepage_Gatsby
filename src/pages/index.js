@@ -4,13 +4,18 @@ import {Link} from "gatsby";
 import Layout from "../components/layout";
 import Head from "../components/head";
 
+import indexStyles from "./index.module.scss"
+
 const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home"/>
-      <h1>Bonjourno.</h1>
-      <h2>I'm Flo,  a full stack developer living in beautiful Berlin.</h2>
-      <p>Need a developer? <Link to="/contact">Contact me.</Link></p>
+      <div className={indexStyles.container}>
+        <div className={indexStyles.center}>
+          <h1>WEB DEVELOPER</h1>
+          <p>Need one? <Link to="/contact">Contact me.</Link></p>
+        </div>
+      </div>
     </Layout>
   )
 }
