@@ -5,20 +5,27 @@
 }
 
 .header {
-    padding: 1.5rem 0 2rem;
+    padding: 1.5rem 0;
     width: 100%;
-    background: black;
+    background: rgba(196, 61, 61, .4);
     border-bottom: #999999 1px solid;
 }
 
 .nav-list {
+    display: none;
+}
+
+.nav-list-active {
     list-style-type: none;
+    display: block;
     margin: 0;
     li {
         text-align: center;
         margin: 15px auto;
         list-style-type: none;
     }
+    padding-top: 25vh;
+    height: 100vh;
 }
 
 .nav-item, .title {
@@ -28,16 +35,33 @@
 
 .title {
     font-family: 'Bebas Neue';
-    color: #bb18a5;
+    color:rgba(255,255,255,0.6);
     display: inline-block;
     font-size: 22px;
     margin-left: 20px;
-    letter-spacing: .2px;
+    letter-spacing: .5px;
+}
+
+.headTitle {
+    margin: 0;
 }
 
 .florian {
     display: flex;
 }
+
+.navbar-toggle {
+    position: absolute;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.6);
+    font-size: 20px;
+}
+
+.active-nav-item{
+    color: #333333;
+}
+
 
 
 
@@ -50,15 +74,11 @@
 }
 
 .inner {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
-}
-
-.headTitle {
-    margin: 0;
 }
 
 .title {
@@ -67,6 +87,7 @@
     display: block;
     letter-spacing: 1.7px;
     transition: ease in .5s;
+    color: #bb18a5;
     
 }
 
@@ -81,6 +102,7 @@
 .nav-list {
     display: flex;
     margin: 0;
+    list-style: none;
 
     li {
         margin: 0;
@@ -100,6 +122,10 @@
 
 .active-nav-item{
     color: #333333;
+}
+
+.navbar-toggle {
+    visibility: hidden;
 }
 }
 

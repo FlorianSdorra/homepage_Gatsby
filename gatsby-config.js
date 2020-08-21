@@ -7,8 +7,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'First-Gatsby-Steps',
-    author: 'Florian Sdorra'
+    author: 'Florian Sdorra',
+    title: 'Gatsby-Home-Page'
   },
   plugins: [
     {
