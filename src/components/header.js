@@ -27,7 +27,7 @@ class Header extends React.Component {
       }
 
       componentDidMount() {
-        this.listener = document.addEventListener("scroll", e => {
+        this.listener = document.addEventListener("scroll", () => {
           var scrolled = document.scrollingElement.scrollTop;
           if (scrolled >= 1) {
             if (this.state.status !== "scroll") {

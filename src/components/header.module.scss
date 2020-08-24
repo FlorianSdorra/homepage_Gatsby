@@ -8,19 +8,30 @@
 .header {
     padding: 1.5rem 0;
     width: 100%;
-    background: rgba(34, 11, 11, 0.6);
+    background: rgba(34, 11, 11, 0.3);
     border-bottom: #999999 1px solid;
     position: fixed;
     z-index: 100;
+    .florian {
+        color:rgba(255, 255, 255, 0.9);
+    }
+    transition: background-color .7s;
 }
 
 .header-two {
     padding: 1.5rem 0;
     width: 100%;
-    background: rgba(43, 35, 35, 0.9998);
+    background: rgba(255, 255, 255, 0.9);
     border-bottom: #999999 1px solid;
     position: fixed;
     z-index: 100;
+    .florian {
+        color:rgba(34, 11, 11, 0.4);
+    }
+    .navbar-toggle {
+        color:rgba(34, 11, 11, 0.4);
+    }
+    transition: background-color .7s;
 }
 
 .nav-list {
@@ -38,17 +49,15 @@
     }
     padding-top: 25vh;
     height: 100vh;
-    background: rgba(34, 11, 11, 1);
 }
 
 .nav-item, .title {
     text-decoration: none;
-    color: white;
+    
 }
 
 .title {
     font-family: 'Bebas Neue';
-    color:rgba(255,255,255,0.6);
     display: inline-block;
     font-size: 22px;
     margin-left: 20px;
@@ -62,7 +71,6 @@
 .florian {
     display: flex;
 }
-
 
 .navbar-toggle {
     position: absolute;
@@ -85,11 +93,14 @@
 .header {
     display: flex;
     justify-content: center;
+    transition: padding .7s;
 }
 
 .header-two {
     display: flex;
     justify-content: center;
+    padding: 1rem 0;
+    transition: padding .7s;
 }
 
 .inner {
@@ -134,11 +145,11 @@
 }
 
 .nav-item:hover{
-    color: rgb(238, 139, 139)
+    
 }
 
 .active-nav-item{
-    color: rgb(238, 139, 139)
+    
 }
 
 .navbar-toggle {
