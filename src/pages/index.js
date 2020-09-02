@@ -27,14 +27,12 @@ class IndexPage extends React.Component{
   }
   
   doTheCircle(){
-    
+
   }
     
-  
   updateWindowDimensions(){
     return this.setState({ width:window.innerWidth, height:window.innerHeight});
   }
-  
   
 
   render(){
@@ -52,11 +50,12 @@ class IndexPage extends React.Component{
             <p>Need one? <Link to="/contact">Contact me.</Link></p>
           </div>
           <div className={indexStyles.content}>
-            <div className={indexStyles.inner}>
-              <div className={indexStyles.heading}>
+              <div className={indexStyles.heading, indexStyles.inner}>
                 <h2>Florian Sdorra is a Full Stack Developer with a passion for design and innovative technologies from Berlin, Germany.</h2>
               </div>
-            </div>
+              <div className={indexStyles.idea}>
+                
+              </div>
           </div>
         </div>
       </Layout>

@@ -8,7 +8,9 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     author: 'Florian Sdorra',
-    title: 'Gatsby-Home-Page'
+    title: 'Gatsby-Home-Page',
+    github: 'https://github.com/FlorianSdorra',
+    linkedin: 'https://www.linkedin.com/in/florian-sdorra/'
   },
   plugins: [
     {
