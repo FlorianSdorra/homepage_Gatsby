@@ -29,11 +29,9 @@ const Footer = () => {
         <footer className={footerStyles.footer}>
             <p className={footerStyles.copyRight}>© {author} 2020</p>
             <div className={footerStyles.links}>
-                <div className={footerStyles.link}> <Link to= {git}><GoMarkGithub /></Link></div>
-                <div className={footerStyles.link}> <Link to ={linked}><AiFillLinkedin/></Link></div>
+                <div className={footerStyles.linkCont}><Link to= {git} target="blank"><GoMarkGithub className={footerStyles.link}/></Link></div>
+                <div className={footerStyles.linkCont}><Link to ={linked} target="blank"><AiFillLinkedin className={footerStyles.link}/></Link></div>
             </div>
-            
-            
         </footer>
     )
 }

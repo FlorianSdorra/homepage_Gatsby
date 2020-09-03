@@ -32,6 +32,7 @@
         color:rgba(34, 11, 11, 0.4);
     }
     transition: background-color .7s;
+
 }
 
 .nav-list {
@@ -101,6 +102,10 @@
     justify-content: center;
     padding: 1rem 0;
     transition: padding .7s;
+
+    .nav-item{
+        color:rgba(34, 11, 11, 0.5);
+    }
 }
 
 .inner {
@@ -138,14 +143,14 @@
 }
 
 .nav-item {
-    color:rgba(255,255,255,0.6);
+    color:rgba(255, 255, 255, 0.9);
 
     font-size: .9rem;
     margin-right: 1.3rem;
 }
 
 .nav-item:hover{
-    
+    color:rgb(66, 56, 56);
 }
 
 .active-nav-item{
