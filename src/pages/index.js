@@ -6,7 +6,9 @@ import Typed from 'react-typed';
 import Layout from "../components/layout";
 import Head from "../components/head";
 
-import indexStyles from "./index.module.scss"
+import indexStyles from "./index.module.scss";
+
+import me from "./assets/images/me.png"
 
 class IndexPage extends React.Component{
   constructor(props) {
@@ -76,11 +78,11 @@ class IndexPage extends React.Component{
             </div>
           </div>
           <div className={indexStyles.content}>
-              <div className={indexStyles.heading, indexStyles.inner}>
-                <div className={indexStyles.me}></div>
-              </div>
-              <div className={indexStyles.descr, indexStyles.inner}>
+              <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.grow}`}>
                 <h2>Florian Sdorra is a Full Stack Developer with a passion for design and innovative technologies from Berlin, Germany.</h2>
+              </div>
+              <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.shrink}`}>
+                <img className={indexStyles.me} src={me}/>
               </div>
           </div>
         </div>
