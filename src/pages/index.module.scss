@@ -16,6 +16,7 @@
     animation: move 2000s linear 0s infinite normal none;
 
     background-color: #9d90fc;
+    // background-color: lightBlue;
     background-image: url("./assets/images/vasilis1.png"), url("./assets/images/vasilis2.png"), url("./assets/images/vasilis3.png");
     position: absolute;
     
@@ -30,43 +31,38 @@
     justify-content: space-around;
     align-items: center;
 
-    .circle {
-        margin-top: 50px;
-        background-color: black;
-        border: solid rgb(248, 223, 0) 5px;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        opacity: .2;
-        box-sizing: border-box;
-    }
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     height: 100%;
     position: relative;
     z-index: 1;
 }
 
-.intro {
-    margin-top: 35px;
+.intro-wrap {
+
     position: relative;
     height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    // justify-content: center;
+    padding: 1.2em;
     
+    .intro {
+        
+    }
+
     h1 {
+        padding-top: 1.5em;
         color: white;
         font-family: 'Abril Fatface';
         font-weight: normal;
-        margin: -7px;
+        font-size: 2.5em;
     }
 
     p {
@@ -79,8 +75,19 @@
 }
 }
 
+.content {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.descr{
+    background: blue;
+}
 
 .inner {
+
     padding: 20px;
     
 
@@ -97,11 +104,27 @@
 
 @media (min-width: 500px) {
     .bg {
+        background-size: 250px, 250px, 250px;
+    }
+
+    .intro-wrap {
+        padding: 1.2em 1.2em 4em 4em ;
+        max-width: 750px;
+        
+        
+        h1{
+            font-size: 4rem
+        }
+    }
+
+    .content {
+        flex-direction: row;
     }
 
     .inner{
         width: 50vw;
     }
+
 }
 
 
