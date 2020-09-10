@@ -28,7 +28,7 @@ import Head from '../components/head'
 
 export const query = graphql`
 query($slug:String!){
-    contentfulBlogPost(slug: {eq:$slug}){
+    contentfulWorkPiece(slug: {eq:$slug}){
         title
         publishedDate(formatString: "MMMM Do, YYYY")
         body {
@@ -50,10 +50,10 @@ const Blog = (props) => {
     }
     return (
         <Layout>
-            <Head title={props.data.contentfulBlogPost.title}/>
-            <h1>{props.data.contentfulBlogPost.title}</h1>
-            <p>{props.data.contentfulBlogPost.publishedDate}</p>
-            {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            <Head title={props.data.contentfulWorkPiece.title}/>
+            <h1>{props.data.contentfulWorkPiece.title}</h1>
+            <p>{props.data.contentfulWorkPiece.publishedDate}</p>
+            {documentToReactComponents(props.data.contentfulWorkPiece.body.json, options)}
         </Layout>
     )
 }

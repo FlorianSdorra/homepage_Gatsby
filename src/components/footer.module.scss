@@ -18,6 +18,8 @@
     // background-color: rgb(223, 223, 223);
     border-top: .5px solid rgb(221, 221, 221);
     position: relative;
+
+    
 }
 
 
@@ -45,14 +47,10 @@
 }
 
 @media (min-width: 500px) {
-
-
    .links{
     .link{
         width: 3em;
         height: 3em;
     }
    } 
-    
-
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import {graphql, useStaticQuery, Link} from 'gatsby';
+import Typed from 'react-typed';
 
 import workStyles from './work.module.scss';
 import Head from '../components/head'
@@ -9,7 +10,7 @@ const WorkPage = ()=> {
 
     const data = useStaticQuery(graphql`
     query{
-        allContentfulBlogPost(
+        allContentfulWorkPiece(
           sort: {
             fields: publishedDate,
             order: DESC
@@ -26,9 +27,9 @@ const WorkPage = ()=> {
       }
     `)
 
-    const posts = data.allContentfulBlogPost.edges.map(el=>
+    const posts = data.allContentfulWorkPiece.edges.map(el=>
         <li className={workStyles.post} key={el.node.id}>
-            <Link to={`/blog/${el.node.slug}`}>
+            <Link to={`/work/${el.node.slug}`}>
                 <h2>{el.node.title}</h2>
                 <p>{el.node.publishedDate}</p>
             </Link>
@@ -39,11 +40,22 @@ const WorkPage = ()=> {
     return(
         <Layout>
             <Head title="Work"/>
-            <h1>Work</h1>
-            <p>Work will show up here late on.</p>
-            <ol className={workStyles.posts}>
+            <div className={workStyles.container}>
+              <div className={workStyles.intro}>
+                <h1 className={workStyles.inner}>Work</h1>
+                <p className={`${workStyles.inner} ${workStyles.typeFix}`} >
+                  <Typed
+                    strings={[
+                      'I use mostly JavaScript and Scss for my work and am constantly adding new libraries and languages'
+                    ]}
+                    typeSpeed={50}
+                 />
+                </p>
+              </div>
+              <ol className={`${workStyles.posts} ${workStyles.inner}`}>
                 {posts}
-            </ol>
+              </ol>
+            </div> 
         </Layout>
     )
 }

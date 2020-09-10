@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +9,7 @@
 .header {
     padding: 1.5rem 0;
     width: 100%;
-    background: rgba(34, 11, 11, 0.3);
+    background: rgb(46, 46, 46);
     border-bottom: #999999 1px solid;
     position: fixed;
     z-index: 100;
@@ -45,11 +46,19 @@
     margin: 0;
     li {
         text-align: center;
-        margin: 15px auto;
+        margin: 20px auto;
         list-style-type: none;
     }
-    padding-top: 25vh;
+    padding-top: 20vh;
     height: 100vh;
+
+    .nav-item{
+        color: black;
+        letter-spacing: 4px;
+    }
+    .active-nav-item {
+        color: gray;
+    }
 }
 
 .nav-item, .title {
