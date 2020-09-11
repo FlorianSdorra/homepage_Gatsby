@@ -35,36 +35,64 @@
 
 
 .posts {
-
     list-style: none;
     margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
 }
 
-.post {
-    margin: 1rem 0;
-
-    a {
-        background-color: #f4f4f4;
-        color: #000000;
-        display: block;
-        padding: 1rem;
-    }
-
-    a:hover {
-        background-color: #e4e4e4;
-    }
-
-    h2 {
-        margin-bottom: 0;
-    }
-
-    p {
-        color: #777777;
-        font-size: .8rem;
-        font-style: italic;
-    }
+.full-card{
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    height: 420px;
 
     -webkit-box-shadow: 0 6px 6px -6px #777;
     -moz-box-shadow: 0 6px 6px -6px #777;
          box-shadow: 0 6px 6px -6px #777;
+}
+.post-details{
+    color: #000000;
+    display: block;
+    padding: 0 .5rem;
+    position: absolute;
+    width: 100%;
+    
+    
+
+    
+
+h2 {
+    margin: 0;
+    
+}
+
+p {
+    color: #777777;
+    font-size: .8rem;
+    font-style: italic;
+    margin: 0;
+}
+
+}
+
+.post {
+    // margin: 1rem 0;
+    width: 255px;
+    height: 320px;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+
+    // padding: 15px;
+    // border: 1px solid black;
+    // border-radius: 5px;
+
 }
