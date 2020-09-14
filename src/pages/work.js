@@ -50,7 +50,7 @@ const WorkPage = ()=> {
             <Head title="Work"/>
             <div className={workStyles.container}>
               <div className={workStyles.intro}>
-                <h1 className={workStyles.inner}>Work</h1>
+                <h1>Work</h1>
                 <p className={`${workStyles.inner} ${workStyles.typeFix}`} >
                   <Typed
                     strings={[
