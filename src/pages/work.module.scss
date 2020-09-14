@@ -59,19 +59,32 @@
     border: 1px solid rgb(199,236,196);
     
 
-    -webkit-box-shadow: 6px 6px 5px 0 rgb(199, 228, 197);
-    -moz-box-shadow: 6px 6px 5px 0 rgb(199, 228, 197);
-    box-shadow: 6px 6px 5px 0 rgb(199, 228, 197);
-
+    // -webkit-box-shadow: 3px 3px 3px 0 rgb(199, 228, 197);
+    // -moz-box-shadow: 3px 3px 3px 0 rgb(199, 228, 197);
+    // box-shadow: 3px 3px 3px 0 rgb(199, 228, 197);
 }
 
 .full-card:hover{
-    transform: translateX(6px) translateY(6px);
+    transform: translateX(3px) translateY(3px);
 
-    -webkit-box-shadow: 0 0 0 0 ;
-    -moz-box-shadow: 0 0 0 0 ;
-         box-shadow: 0 0 0 0 ;
+    // -webkit-box-shadow: 0 0 0 0 ;
+    // -moz-box-shadow: 0 0 0 0 ;
+    //      box-shadow: 0 0 0 0 ;
 
+
+    -webkit-box-shadow: inset 3px 3px 0 0 rgb(199, 228, 197);
+    -moz-box-shadow: inset 3px 3px 0 0 rgb(199, 228, 197);
+    box-shadow: inset 3px 3px 0 0 rgb(199, 228, 197);
+
+
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+    border-top: none;
+
+    .post {
+        // 
+    }
   
     }
 .post-details{
@@ -96,7 +109,6 @@ p {
     border: white 1px solid;
     width: 255px;
     height: 320px;
-    background-color: #f4f4f4;
     background-size: auto 320px;
     position: relative;
 
