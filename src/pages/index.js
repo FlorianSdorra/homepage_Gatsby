@@ -1,11 +1,14 @@
 import React from "react";
 import {Link} from "gatsby";
 import CircleType from "circletype";
+import Typed from 'react-typed';
 
 import Layout from "../components/layout";
 import Head from "../components/head";
 
-import indexStyles from "./index.module.scss"
+import indexStyles from "./index.module.scss";
+
+import me from "./assets/images/me.png"
 
 class IndexPage extends React.Component{
   constructor(props) {
@@ -42,19 +45,44 @@ class IndexPage extends React.Component{
       <Layout>
         <Head title="Home"/>
         <div className={indexStyles.bg}>
-          <div className={indexStyles.circle}></div>
         </div>
         <div className={indexStyles.container}>
-          <div className={indexStyles.intro}>
-            <h1 className={indexStyles.introHead}>Web Developer</h1>
-            <p>Need one? <Link to="/contact">Contact me.</Link></p>
+          <div className={indexStyles.introWrap}>
+            <div className={indexStyles.intro}>
+            <h1>
+            <Typed
+                    strings={[
+                      'Hey, I am Flo',
+                      'I salute you dear visitor of my page :)',
+                      'Ladies and Gents',
+                      'Welcome dear honorable members of the internet.'
+                    ]}
+                    typeSpeed={50}
+                    backSpeed={50}
+                    backDelay={900}
+                />
+
+                {/* <Typed
+                strings={[
+                    'Search for products',
+                    'Search for categories',
+                    'Search for brands']}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    attr="placeholder"
+                    loop >
+                    <input type="text"/>
+                </Typed> */}
+            </h1>
+            {/* <p>Need one? <Link to="/contact">Contact me.</Link></p> */}
+            </div>
           </div>
           <div className={indexStyles.content}>
-              <div className={indexStyles.heading, indexStyles.inner}>
+              <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.grow}`}>
                 <h2>Florian Sdorra is a Full Stack Developer with a passion for design and innovative technologies from Berlin, Germany.</h2>
               </div>
-              <div className={indexStyles.idea}>
-                
+              <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.shrink}`}>
+                <img className={indexStyles.me} src={me}/>
               </div>
           </div>
         </div>
