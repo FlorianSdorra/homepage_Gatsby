@@ -95,7 +95,7 @@ class Header extends React.Component {
         )
         :
         (
-            <header className={headerStyles.header} >
+            <header className={this.state.status==="top"? headerStyles.header:headerStyles.headerTwo} >
             <div className={headerStyles.inner}>
                     <span className={headerStyles.navbarToggle} onClick={this.handleClick} >
                         <FontAwesomeIcon icon={faBars} size="2x" />

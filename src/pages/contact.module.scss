@@ -1,10 +1,10 @@
 
+
 .container {
     padding-top: 10em;
     min-height: 100vh;
     padding-bottom: 32px;
     margin-bottom: -32px;
-    background: rgb(184, 184, 184);
 }
 
 .inner {
@@ -19,21 +19,80 @@
         font-size: 2.5em;
         font-family: 'Bebas Neue';
         letter-spacing: 7px;
-        color: rgba(255, 255, 255, 0.89);
+        color: black;
     }
     p{
         font-family: 'Bebas Neue';
-        letter-spacing: 2px;
+        letter-spacing: .3em;
         text-align: center;
-        letter-spacing: 2px;
-        color: rgb(199,236,196);
+        color: black
     }
 }
 
 .contact-box{
     margin: 4em 1em;
+    z-index: 666;
     min-height: 60vh;
-    background-color: honeydew;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-box-bg{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('./assets/images/backgrounds/abstract-backgrounds-4.jpg');
+    filter: grayscale(40%);
+    
+}
+
+
+.link-box {
+    padding: 1.2em;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    border: 3px solid plum;
+}
+
+.link-box:hover {
+    cursor: pointer;
+}
+
+.link-box-bg{
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: .6;
+    z-index: -1;
+}
+
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-family: 'Bebas Neue';
+        margin: 0;
+        margin-top: 1em;
+        color: rgb(192, 139, 192);
+    }
+}
+
+.icon {
+    color: black;
+    width: 40px;
+    height: 40px;
 }
 
 @media(min-width: 500px){
@@ -42,6 +101,10 @@
         min-height: 100vh;
         padding-bottom: 36px;
         margin-bottom: -36px;
+    }
+
+    .contact-box {
+        margin: 4em 6em;
     }
 }
     

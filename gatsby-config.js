@@ -10,7 +10,9 @@ module.exports = {
     author: 'Florian Sdorra',
     title: 'Gatsby-Home-Page',
     github: 'https://github.com/FlorianSdorra',
-    linkedin: 'https://www.linkedin.com/in/florian-sdorra/'
+    linkedin: 'https://www.linkedin.com/in/florian-sdorra/',
+    email: 'mailto:fsd114@posteo.de',
+    phone: +4915759608379,
   },
   plugins: [
     {
