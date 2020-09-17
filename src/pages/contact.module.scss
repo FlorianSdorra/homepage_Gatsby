@@ -1,0 +1,47 @@
+
+.container {
+    padding-top: 10em;
+    min-height: 100vh;
+    padding-bottom: 32px;
+    margin-bottom: -32px;
+    background: rgb(184, 184, 184);
+}
+
+.inner {
+    padding: 15px;
+}
+
+.intro {
+    
+    h1{
+        text-align: center;
+        text-decoration: overline;
+        font-size: 2.5em;
+        font-family: 'Bebas Neue';
+        letter-spacing: 7px;
+        color: rgba(255, 255, 255, 0.89);
+    }
+    p{
+        font-family: 'Bebas Neue';
+        letter-spacing: 2px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: rgb(199,236,196);
+    }
+}
+
+.contact-box{
+    margin: 4em 1em;
+    min-height: 60vh;
+    background-color: honeydew;
+}
+
+@media(min-width: 500px){
+
+    .container {
+        min-height: 100vh;
+        padding-bottom: 36px;
+        margin-bottom: -36px;
+    }
+}
+    

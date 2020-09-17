@@ -13,7 +13,7 @@ const WorkPage = ()=> {
         allContentfulWorkPiece(
           sort: {
             fields: publishedDate,
-            order: DESC
+            order: ASC
           }
         ){
           edges{ 
@@ -49,20 +49,23 @@ const WorkPage = ()=> {
         <Layout>
             <Head title="Work"/>
             <div className={workStyles.container}>
-              <div className={workStyles.intro}>
+              <div className={workStyles.intro}> 
                 <h1>Work</h1>
                 <p className={`${workStyles.inner} ${workStyles.typeFix}`} >
                   <Typed
                     strings={[
-                      'I use mostly JavaScript and Scss for my work and am constantly adding new libraries and languages'
+                      `Javascript, Html and Scss are pretty much the foundation of anything i create. I have fun in constantly exploring new libraries and frameworks and using them in both Front and Backend.`
                     ]}
                     typeSpeed={50}
                  />
                 </p>
               </div>
-              <ol className={`${workStyles.posts} ${workStyles.inner}`}>
-                {posts}
-              </ol>
+              <div className={workStyles.postWrap}>
+                <ol className={`${workStyles.posts} ${workStyles.inner}`}>
+                  {posts}
+                </ol>
+              </div>
+              
             </div> 
         </Layout>
     )

@@ -9,9 +9,10 @@
 .header {
     padding: 1.5rem 0;
     width: 100%;
-    background: rgba(157,144,252,.5);
+    background: rgba(157,144,252,0);
     border-bottom: rgb(255,255,255) 1px solid;
-    position: fixed;
+    
+    position: absolute;
     z-index: 100;
     .florian {
         color:rgba(255, 255, 255, 0.9);
@@ -153,17 +154,17 @@
 
 .nav-item {
     color:rgba(255, 255, 255, 0.9);
-
+    font-style: italic;
     font-size: .9rem;
     margin-right: 1.3rem;
 }
 
 .nav-item:hover{
-    color:rgb(66, 56, 56);
+    text-decoration: overline;
 }
 
 .active-nav-item{
-    
+    text-decoration: overline;
 }
 
 .navbar-toggle {

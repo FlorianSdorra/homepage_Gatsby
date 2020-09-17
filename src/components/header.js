@@ -58,6 +58,8 @@ class Header extends React.Component {
     // const author = data.site.siteMetadata.author;
 
 
+    // HEADER variante wenn navlist inActive = className={this.state.status==="top"? headerStyles.header:headerStyles.headerTwo}
+
    render() { 
        console.log(this.state);
        console.log(this.props);
@@ -84,7 +86,7 @@ class Header extends React.Component {
                     <ul className={headerStyles.navList} className={headerStyles.navListActive} >
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link> </li>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/work">Work</Link></li>
-                        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li>
+                        {/* <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li> */}
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
@@ -93,7 +95,7 @@ class Header extends React.Component {
         )
         :
         (
-            <header className={this.state.status==="top"? headerStyles.header:headerStyles.headerTwo}>
+            <header className={headerStyles.header} >
             <div className={headerStyles.inner}>
                     <span className={headerStyles.navbarToggle} onClick={this.handleClick} >
                         <FontAwesomeIcon icon={faBars} size="2x" />
@@ -112,7 +114,7 @@ class Header extends React.Component {
                     <ul className={headerStyles.navList} >
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link> </li>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/work">Work</Link></li>
-                        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li>
+                        {/* <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li> */}
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link></li>
                     </ul>
                 </nav>

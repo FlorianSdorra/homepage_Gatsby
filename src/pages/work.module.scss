@@ -1,13 +1,15 @@
 *{
-    box-sizing: border-box;
+    
     text-decoration: none;
 }
 
+
 .container {
-    background: rgb(157,144,252);
-    padding-top: 9em;
+    background: rgb(184, 184, 184);
+    padding-top: 10em;
     .inner {
         padding: 15px;
+        // padding-top: 0;
     }
     min-height: 100vh;
     padding-bottom: 32px;
@@ -17,46 +19,53 @@
 .intro {
         position: relative;
     h1{
-        // text-decoration: overline;
-        transform: rotate(90deg);
-		position: absolute;
-		top: 20px;
-        left: -17px;
-        font-size: 2.2em;
+        text-align: center;
+        text-decoration: overline;
+        font-size: 2.5em;
         font-family: 'Bebas Neue';
         letter-spacing: 7px;
         color: rgba(255, 255, 255, 0.89);
-        border-top: white 1.5px solid;
     }
+    
     p{
-        margin-left: 4.5em;
-        text-align: end;
+        text-align: center;
+        // text-align: end;
         font-family: 'Bebas Neue';
-        letter-spacing: 1.3px;
+        letter-spacing: 2px;
         color: rgb(199,236,196);
     }
 }
 
 .type-fix {
-    min-height: 140px;
+    min-height: 200px;
+}
+
+.post-wrap{
+    width: 100%;
+    padding: 0 50px;
+
 }
 
 .posts {
     list-style: none;
-    margin: 0;
     width: 100%;
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    
+    background-size: cover;
 }
 
 .full-card{
     margin: 30px;
     padding: 15px;
-    border: 1px solid white;
+    // border: 1px solid white;
     border-radius: 7px;
-    border: 1px solid rgb(199,236,196);
+    border: 1px solid white;
     
 
     // -webkit-box-shadow: 3px 3px 3px 0 rgb(199, 228, 197);
@@ -95,6 +104,8 @@ h2 {
     margin: 0;
     text-align: end;
     color: rgba(255, 255, 255, 0.904);
+    font-family: 'Bebas Neue';
+    font-weight: normal;
 }
 p {
     color: black;
@@ -129,6 +140,7 @@ p {
     .posts{
         flex-direction: row;
         flex-wrap: wrap;
+        // background-color: #f4f7f6;
     }
 
     .container {
