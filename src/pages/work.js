@@ -35,6 +35,7 @@ const WorkPage = ()=> {
 
     const posts = data.allContentfulWorkPiece.edges.map(el=>
       <Link className={workStyles.fullCard} to={`/work/${el.node.slug}`}>
+        <div className={workStyles.fullcardBg}></div>
         <li className={workStyles.post} key={el.node.id} style={{backgroundImage:"url("+el.node.sample.file.url+")"}}><div className={workStyles.postFilter}></div>
         </li>
         <div className={workStyles.postDetails}>

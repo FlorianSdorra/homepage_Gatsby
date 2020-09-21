@@ -12,8 +12,11 @@
             background-position: 5000px -5000px, 10000px -20000px, -10000px -15000px;
         }
     }
-
+    
     animation: move 2000s linear 0s infinite normal none;
+    transform: translateZ(0);
+    -webkit-animation: move 2000s linear infinite;
+    -webkit-transform: translateZ(0);
 
     background-color: #9d90fc;
     // background-color: lightBlue;

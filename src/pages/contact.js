@@ -6,7 +6,8 @@ import Layout from '../components/layout';
 import Head from '../components/head';
 import contactStyles from './contact.module.scss';
 
-import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone, AiOutlineArrowDown } from 'react-icons/ai';
+import {CgArrowLongDownR} from 'react-icons/cg'
 
 const ContactPage = () => {
 
@@ -27,35 +28,29 @@ const ContactPage = () => {
             <Head title="Contact"/>
             <div className={contactStyles.container}>
                 <div className={contactStyles.intro}>
-                    <h1>Contact</h1>
-                    <p className={contactStyles.inner}>
-                    <Typed
-                    strings={[
-                      `Get in touch with me.`
-                    ]}
+                    <div className={contactStyles.introEyes}></div>
+                    <div className={contactStyles.introText}>
+                        <h1>Contact</h1>
+                        <p>
+                        <Typed
+                            strings={[`If you want to talk, please get in touch with me.`]}
                     typeSpeed={50}
                  />
                         </p>
+                        <CgArrowLongDownR className={contactStyles.arrow}/>
+                    </div>
                 </div>
                 <div className={contactStyles.contactBox}>
-                    <div className ={contactStyles.contactBoxBg}></div>
-                    <Link to={data.site.siteMetadata.linkedin} target="blank">
-                        <div className={contactStyles.linkBox}>
-                            <div className={contactStyles.linkBoxBg}></div>   
-                            <AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin>
-                        </div>
-                    </Link>
-                    <a href={data.site.siteMetadata.email} target="blank">
-                        <div className={contactStyles.linkBox}>
-                            <div className={contactStyles.linkBoxBg}></div>      
+                    <div className={contactStyles.contacts}>
+                        <h3>You can <br/> reach me via:</h3>
+                        <div className={contactStyles.icons}>
                             <AiOutlineMail className={contactStyles.icon}></AiOutlineMail>
+                            <AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin>
+                            <p className={contactStyles.phone}><AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>:
+                            +4915759608379</p>
                         </div>
-                    </a>
-                    <div  className={`${contactStyles.linkBox} ${contactStyles.phoneBox}`} target="blank">
-                        <div className={contactStyles.linkBoxBg}></div>
-                        <AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>
-                        <p>+491575960837</p>
                     </div>
+                    
                 </div>  
             </div>
         </Layout>

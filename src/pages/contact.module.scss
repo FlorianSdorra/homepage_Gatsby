@@ -1,106 +1,158 @@
 
 
 .container {
-    padding-top: 10em;
+    padding-top: 6.2em;
     min-height: 100vh;
     padding-bottom: 32px;
     margin-bottom: -32px;
+    position: relative;
 }
+
 
 .inner {
     padding: 15px;
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     
-    h1{
-        text-align: center;
-        text-decoration: overline;
-        font-size: 2.5em;
+}
+
+.intro-eyes{
+    width: 100%;
+    height: 60vh;
+    background-image: url('./assets/images/pattern-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-text{
+    width: 100%;
+    padding: 70px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    h1 {
+        font-size: 4em;
+        font-family: 'Bebas Neue';
+        letter-spacing: 10px;
+        color: black;
+    }
+    p {
         font-family: 'Bebas Neue';
         letter-spacing: 7px;
         color: black;
-    }
-    p{
-        font-family: 'Bebas Neue';
-        letter-spacing: .3em;
         text-align: center;
-        color: black
+    }
+    .arrow {
+        position: absolute;
+        color: black;
+        bottom: -90px;
+        left: 38%;
+        margin: 50px auto;
+        display: block;
+        width: 80px;
+        height: 80px;
     }
 }
-
 .contact-box{
-    margin: 4em 1em;
+    background-repeat: no-repeat;
+    margin: 6em 2em;
     z-index: 666;
-    min-height: 60vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contact-box-bg{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url('./assets/images/backgrounds/abstract-backgrounds-4.jpg');
-    filter: grayscale(40%);
-    
-}
-
-
-.link-box {
-    padding: 1.2em;
-    width: fit-content;
     height: fit-content;
     position: relative;
-    border: 3px solid plum;
-}
-
-.link-box:hover {
-    cursor: pointer;
-}
-
-.link-box-bg{
-    border-radius: 4px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    font-family: 'Bebas Neue';
     background-color: white;
-    opacity: .6;
-    z-index: -1;
+    h3{
+        font-family: 'Bebas Neue';
+        letter-spacing: 4px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-
-.phone-box {
+.icons{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    p {
-        font-family: 'Bebas Neue';
+    // align-items: center;
+    margin: 20px 0;
+    p{
         margin: 0;
-        margin-top: 1em;
-        color: rgb(192, 139, 192);
     }
 }
 
 .icon {
     color: black;
+    margin: 5px 0;
     width: 40px;
     height: 40px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
 }
 
 @media(min-width: 500px){
 
     .container {
+        padding-top: 6em;
         min-height: 100vh;
         padding-bottom: 36px;
         margin-bottom: -36px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .intro-eyes{
+        width: 70%;
+        background-image: url('./assets/images/pattern-01.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .intro-text{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h1 {
+            font-size: 4em;
+            font-family: 'Bebas Neue';
+            letter-spacing: 10px;
+            color: black;
+        }
+        p {
+            font-family: 'Bebas Neue';
+            letter-spacing: 7px;
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+        .arrow {
+            position: absolute;
+            color: black;
+            bottom: -80px;
+            left: 45%;
+            margin: 50px auto;
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
     }
 
     .contact-box {
