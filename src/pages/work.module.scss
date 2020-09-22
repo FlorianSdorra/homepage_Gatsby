@@ -5,7 +5,7 @@
 
 
 .container {
-    padding-top: 10em;
+    padding-top: 6em;
     .inner {
         padding: 15px;
         // padding-top: 0;
@@ -15,28 +15,58 @@
     margin-bottom: -32px;
 }
 
+.intro-headline{
+    font-size: 5em;
+    font-family: 'Bebas Neue';
+    letter-spacing: .4em;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin: 1.1em 0;
+
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
 .intro {
         position: relative;
-    h1{
-        text-align: center;
-        text-decoration: overline;
-        font-size: 3em;
-        font-family: 'Bebas Neue';
-        letter-spacing: 7px;
-        color: black;
-    }
-    
     p{
+        position: relative;
+        z-index: 100;
         text-align: center;
         // text-align: end;
         font-family: 'Bebas Neue';
         letter-spacing: .2em;
-        color: black;
+        color: white;
+        margin: 0;
     }
+        margin: 1em;
+        padding: 2em;
+}
+
+.intro-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('./assets/images/pattern-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
 }
 
 .type-fix {
-    min-height: 200px;
+    min-height: 300px;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .post-wrap{
@@ -64,10 +94,13 @@
     margin: 30px;
     padding: 15px;
     // border: 1px solid white;
-    border-radius: 7px;
     // background-color: white;
     // border: 1px solid black;
     position: relative;
+    background-color: white;
+    border-radius: 5px;
+    border: black 2px solid;
+    box-shadow: 10px 5px 5px black;
 }
 
 .fullcard-bg {
@@ -76,8 +109,7 @@
     bottom:0;
     left: 0;
     right: 0;
-    filter: blur();
-    background-image: url('./assets/images/backgrounds/abstract-backgrounds-9.jpg');
+    
 }
 
 .full-card:hover{
@@ -99,10 +131,6 @@
     // border-left: none;
     // border-top: none;
 
-    .post {
-        // 
-    }
-  
     }
 .post-details{
     margin-top: 1em;
@@ -158,5 +186,19 @@ p {
         min-height: 100vh;
         padding-bottom: 36px;
         margin-bottom: -36px;
+    }
+    .intro{
+        margin: 3em 0;
+        padding: 6em 3em;
+    }
+    .intro-headline{
+        font-size: 8em;
+        margin: .5em 0;
+    }
+}
+
+@media(min-width: 900px ){
+    .type-fix{
+        min-height: 150px;
     }
 }

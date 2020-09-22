@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useStaticQuery } from 'gatsby';
+import {Link, useStaticQuery } from 'gatsby';
 import Typed from 'react-typed';
 
 import Layout from '../components/layout';
@@ -42,16 +42,16 @@ const ContactPage = () => {
                 </div>
                 <div className={contactStyles.contactBox}>
                     <div className={contactStyles.contacts}>
-                        <h3>You can <br/> reach me via:</h3>
+                        <h3>You can reach me via:</h3>
                         <div className={contactStyles.icons}>
-                            <AiOutlineMail className={contactStyles.icon}></AiOutlineMail>
-                            <AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin>
+                            <a href="mailto:fsd114@hnee.de"><AiOutlineMail className={contactStyles.icon}></AiOutlineMail></a>
+                            <Link to={data.site.siteMetadata.linkedin} target="blank"><AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin></Link>
                             <p className={contactStyles.phone}><AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>:
                             +4915759608379</p>
                         </div>
                     </div>
-                    
-                </div>  
+                </div> 
+                <div className={contactStyles.outroEyes}></div>
             </div>
         </Layout>
     )
