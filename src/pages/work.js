@@ -52,15 +52,8 @@ const WorkPage = ()=> {
             <div className={workStyles.container}>
               <h1 className={workStyles.introHeadline}>Work</h1>
               <div className={workStyles.intro}>
-                <div className={workStyles.introBg}></div>
-                <p className={`${workStyles.inner} ${workStyles.typeFix}`} >
-                  <Typed
-                    strings={[
-                      `Javascript, Html and Scss are pretty much the foundation of anything i create. I have fun in constantly exploring new libraries and frameworks and using them in both Front and Backend.`
-                    ]}
-                    typeSpeed={50}
-                 />
-                </p>
+                
+                <p className={`${workStyles.inner} ${workStyles.typeFix}`} >Javascript, Html and Scss are pretty much the foundation of anything i create. I have fun in constantly exploring new libraries and frameworks and using them in both Front- and Backend.</p>
               </div>
               <div className={workStyles.postWrap}>
                 <ol className={`${workStyles.posts} ${workStyles.inner}`}>

@@ -1,0 +1,45 @@
+.container {
+    margin-top: 6em;
+}
+
+.introHeadline{
+    font-size: 5em;
+    font-family: 'Bebas Neue';
+    letter-spacing: .4em;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 1.1em .05em 0;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.content{
+    margin: 1em;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    p{
+        letter-spacing: .2em;
+        margin-bottom: 5em;
+    }
+
+    img{
+        height: 200px;
+        padding: 1em;
+    }
+}
+
+@media(min-width: 500px){
+    .content{
+        margin: 3em;
+
+        p{
+            margin-bottom: 3em;
+        }
+    }
+}

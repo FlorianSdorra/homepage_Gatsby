@@ -3,7 +3,9 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'; 
 
 import Layout from '../components/layout';
-import Head from '../components/head'
+import Head from '../components/head';
+
+import workStyles from './work.module.scss';
 
 // export const query = graphql`
 //     query (
@@ -27,15 +29,15 @@ import Head from '../components/head'
 // `
 
 export const query = graphql`
-query($slug:String!){
-    contentfulWorkPiece(slug: {eq:$slug}){
-        title
-        publishedDate(formatString: "MMMM Do, YYYY")
-        body {
-            json
+    query($slug:String!){
+        contentfulWorkPiece(slug: {eq:$slug}){
+            title
+            publishedDate(formatString: "MMMM Do, YYYY")
+            body {
+                json
+            }
         }
     }
-  }
 `
 
 const Work = (props) => {
@@ -51,9 +53,11 @@ const Work = (props) => {
     return (
         <Layout>
             <Head title={props.data.contentfulWorkPiece.title}/>
-            <h1>{props.data.contentfulWorkPiece.title}</h1>
-            <p>{props.data.contentfulWorkPiece.publishedDate}</p>
-            {documentToReactComponents(props.data.contentfulWorkPiece.body.json, options)}
+            <div className={workStyles.container}>
+                <h1 className={workStyles.introHeadline}>{props.data.contentfulWorkPiece.title}</h1>
+                {/* <p>{props.data.contentfulWorkPiece.publishedDate}</p> */}
+                <div className={workStyles.content}>{documentToReactComponents(props.data.contentfulWorkPiece.body.json, options)}</div>
+            </div>
         </Layout>
     )
 }

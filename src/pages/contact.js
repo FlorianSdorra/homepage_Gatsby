@@ -31,12 +31,7 @@ const ContactPage = () => {
                     <div className={contactStyles.introEyes}></div>
                     <div className={contactStyles.introText}>
                         <h1>Contact</h1>
-                        <p>
-                        <Typed
-                            strings={[`If you want to talk, please get in touch with me.`]}
-                    typeSpeed={50}
-                 />
-                        </p>
+                        <p>If you want to talk, please get in touch with me.</p>
                         <CgArrowLongDownR className={contactStyles.arrow}/>
                     </div>
                 </div>
