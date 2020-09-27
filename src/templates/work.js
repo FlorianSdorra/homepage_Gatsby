@@ -54,7 +54,7 @@ const Work = (props) => {
         <Layout>
             <Head title={props.data.contentfulWorkPiece.title}/>
             <div className={workStyles.container}>
-                <h1 className={workStyles.introHeadline}>{props.data.contentfulWorkPiece.title}</h1>
+                <h1 className={workStyles.introHeadline}><p>{props.data.contentfulWorkPiece.title}</p></h1>
                 {/* <p>{props.data.contentfulWorkPiece.publishedDate}</p> */}
                 <div className={workStyles.content}>{documentToReactComponents(props.data.contentfulWorkPiece.body.json, options)}</div>
             </div>

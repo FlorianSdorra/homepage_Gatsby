@@ -5,9 +5,10 @@ import Typed from 'react-typed';
 import Layout from '../components/layout';
 import Head from '../components/head';
 import contactStyles from './contact.module.scss';
+import Fade from 'react-reveal/Fade';
 
 import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone, AiOutlineArrowDown } from 'react-icons/ai';
-import {CgArrowLongDownR} from 'react-icons/cg'
+import {CgArrowLongDownR} from 'react-icons/cg';
 
 const ContactPage = () => {
 

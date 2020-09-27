@@ -3,7 +3,7 @@
     width: 100%;
     background: rgba(255, 255, 255, 0);
     border-bottom: grey 1px solid;
-    
+    font-family: 'Bebas Neue';
     position: fixed;
     z-index: 667;
     .navbar-toggle {
@@ -19,6 +19,7 @@
     padding: 1em 0;
     width: 100%;
     background: rgb(255, 255, 255);
+    font-family: 'Bebas Neue';
     border-bottom: #999999 1px solid;
     position: fixed;
     z-index: 667;
@@ -83,6 +84,7 @@
     right: 35px;
     cursor: pointer; 
     color: black;
+    font-family: 'Bebas Neue';
     font-size: 20px;
     margin-top: 3px;
 }

@@ -3,11 +3,130 @@
     text-decoration: none;
 }
 
+@keyframes floatOne {
+	0% {
+		text-shadow: 5px 15px 0px rgba(157,144,252, 1);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 25px 15px 0px  rgba(157,144,252, .7);
+		transform: translatey(10px);
+	}
+	100% {
+		text-shadow: 5px 15px 0px rgba(157,144,252, 1);
+		transform: translatey(0px);
+	}
+}
+@keyframes floatTwo {
+	0% {
+		text-shadow: 5px 15px 0px rgba(42,127,85, 1);
+		transform: translatey(-5px);
+	}
+	50% {
+		text-shadow: 25px 15px 0px rgba(42,127,85, .4);
+		transform: translatey(-30px);
+	}
+	100% {
+		text-shadow: 5px 15px 0px rgba(42,127,85, 1);
+		transform: translatey(-5px);
+	}
+}
+@keyframes floatThree {
+	0% {
+		text-shadow: 5px 15px 0px rgba(251,104,58, 1);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 25px 15px 0px rgba(251,104,58, .7);
+		transform: translatey(-15px);
+	}
+	100% {
+		text-shadow: 5px 15px 0px rgba(251,104,58, 1);
+		transform: translatey(0px);
+	}
+}
+@keyframes floatFour {
+	0% {
+		text-shadow: 5px 15px 0px rgba(224,124,155, 1);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 25px 15px 0px rgba(224,124,155, .7);
+		transform: translatey(10px);
+	}
+	100% {
+		text-shadow: 5px 15px 0px rgba(224,124,155, 1);
+		transform: translatey(0px);
+	}
+}
+
+    
+
+@keyframes floatCard {
+	0% {
+		box-shadow: 10px 10px 0px rgba(157,144,252, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+	50% {
+		box-shadow: 0px 0px 0px rgba(157,144,252, .7);
+        transform: translatey(10px) translatex(10px);
+	}
+	100% {
+		box-shadow: 10px 10px 0px rgba(157,144,252, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+}
+
+@keyframes floatCardScnd {
+	0% {
+		box-shadow: 10px 10px 0px rgba(42,127,85, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+	50% {
+		box-shadow: 0px 0px 0px rgba(42,127,85, .7);
+        transform: translatey(10px) translatex(10px);
+	}
+	100% {
+		box-shadow: 10px 10px 0px rgba(42,127,85, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+}
+
+@keyframes floatCardThrd {
+	0% {
+		box-shadow: 10px 10px 0px rgba(251,104,58, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+	50% {
+		box-shadow: 0px 0px 0px rgba(251,104,58, .7);
+        transform: translatey(10px) translatex(10px);
+	}
+	100% {
+		box-shadow: 10px 10px 0px rgba(251,104,58, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+}
+
+@keyframes floatCardFrth {
+	0% {
+		box-shadow: 10px 10px 0px rgba(224,124,155, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+	50% {
+		box-shadow: 0px 0px 0px rgba(224,124,155, .7);
+        transform: translatey(10px) translatex(10px);
+	}
+	100% {
+		box-shadow: 10px 10px 0px rgba(224,124,155, 1);
+        transform: translatey(0px) translatex(0px);
+	}
+}
+
 
 .container {
     padding-top: 6em;
     .inner {
-        padding: 15px;
+        // padding: 15px;
         // padding-top: 0;
     }
     min-height: 100vh;
@@ -19,19 +138,41 @@
     font-size: 5em;
     font-family: 'Bebas Neue';
     letter-spacing: .4em;
-    color: rgb(34, 34, 34);
     text-align: center;
-    margin-top: 1.1em;
-    margin-bottom: 0;
-
-    -webkit-text-stroke: 2px black;
+    margin: .9em 0 .6em;
+    width: 100%;
+    height: fit-content;
+    -webkit-text-stroke: 2px rgb(34, 34, 34);
     -webkit-text-fill-color: white;
-    text-shadow:
-        3px 3px 0 #000,
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-shadow:
+    //     3px 3px 0 #000,
+    //     -1px -1px 0 #000,  
+    //     1px -1px 0 #000,
+    //     -1px 1px 0 #000,
+    //     1px 1px 0 #000;
+
+    //     transform: translatey(0px);
+    //     animation: float 6s ease-in-out infinite;
+    
+    .W{
+        transform: translatey(0px);
+        animation: floatOne 6s ease-in-out infinite;
+    }
+    .O{
+        transform: translatey(0px);
+        animation: floatTwo 6s ease-in-out infinite;
+    }
+    .R{
+        transform: translatey(0px);
+        animation: floatThree 6s ease-in-out infinite;
+    }
+    .K{
+        transform: translatey(0px);
+        animation: floatFour 6s ease-in-out infinite;
+    }
 }
 
 .intro {
@@ -39,15 +180,17 @@
     p{
         position: relative;
         z-index: 100;
-        text-align: center;
-        // text-align: end;
+        // hyphens: auto;
         font-family: 'Bebas Neue';
-        letter-spacing: .2em;
+        text-align: justify center;
+        letter-spacing: .25em;
+        // letter-spacing: .4em;
+        // word-spacing: .6em;
         color: rgb(34, 34, 34);
         margin: 0;
+        padding: 0;
     }
-        margin: 1em;
-        padding: 2em;
+        padding: 0 1em 3em;
 }
 
 .intro-bg{
@@ -62,12 +205,12 @@
     opacity: .8;
 }
 
-.type-fix {
-    min-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .type-fix {
+//     min-height: 300px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .post-wrap{
     width: 100%;
@@ -85,9 +228,9 @@
     justify-content: center;
     // border: 1px solid white;
     box-sizing: border-box;
-    
     background-size: cover;
     position: relative;
+    margin: 0 0 5em;
 }
 
 .full-card{
@@ -100,7 +243,25 @@
     background-color: white;
     border-radius: 5px;
     border: black 2px solid;
-    box-shadow: 10px 5px 5px black;
+
+
+    transform: translatey(0px) translateX(0px);
+    animation: floatCard 7s ease-in-out infinite;
+}
+
+.full-card:nth-child(2n + 2){
+    transform: translatey(0px) translateX(0px);
+    animation: floatCardScnd 5s ease-in-out infinite;
+}
+
+.full-card:nth-child(3n+3){
+    transform: translatey(0px) translateX(0px);
+    animation: floatCardThrd 6s ease-in-out infinite;
+}
+
+.full-card:nth-child(4n+4){
+    transform: translatey(0px) translateX(0px);
+    animation: floatCardFrth 5s ease-in-out infinite;
 }
 
 .fullcard-bg {
@@ -187,19 +348,20 @@ p {
         padding-bottom: 36px;
         margin-bottom: -36px;
     }
-    .intro{
-        // margin: 3em 0;
-        // padding: 6em 3em;
-    }
     .intro-headline{
         font-size: 8em;
-        margin-top: .5em;
-        margin-bottom: 0;
+        margin: .7em 0 .3em;
+    }
+    .intro{
+        padding: 0 3em 4em;
+        p {
+            text-align: center;
+        }
     }
 }
 
 @media(min-width: 900px ){
-    .type-fix{
-        min-height: 150px;
+    .intro{
+        padding: 0 6em 5em;
     }
 }
