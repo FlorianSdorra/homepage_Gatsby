@@ -135,11 +135,11 @@
 }
 
 .intro-headline{
-    font-size: 5em;
+    font-size: 5.3em;
     font-family: 'Bebas Neue';
     letter-spacing: .4em;
     text-align: center;
-    margin: .9em 0 .6em;
+    margin: 1em 0 .9em;
     width: 100%;
     height: fit-content;
     -webkit-text-stroke: 2px rgb(34, 34, 34);
@@ -189,6 +189,8 @@
         color: rgb(34, 34, 34);
         margin: 0;
         padding: 0;
+        letter-spacing: .2em;
+        word-spacing: .4em;
     }
         padding: 0 1em 3em;
 }

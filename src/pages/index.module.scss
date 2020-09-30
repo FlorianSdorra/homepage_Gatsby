@@ -101,12 +101,13 @@
 
     padding: 20px;
     h2 {
-        
         overflow: hidden;
         font-weight: lighter;
         font-family: 'Libre Caslon Display', serif;
         font-size: 1.8rem;
-        letter-spacing: 1.5px;
+        text-align: block;
+        letter-spacing: .05em;
+        word-spacing: .2em;
     }
 }
 
