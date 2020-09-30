@@ -79,7 +79,7 @@ class IndexPage extends React.Component{
           </div>
           <div className={indexStyles.content}>
               <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.grow}`}>
-                <h2>Florian Sdorra is a Full Stack Developer with a passion for design and innovative technologies from Berlin, Germany.</h2>
+                <h2>I am a Full Stack Developer with a passion for design and innovative technologies from Berlin, Germany.</h2>
               </div>
               <div className={`${indexStyles.inner} ${indexStyles.descr} ${indexStyles.shrink}`}>
                 <img className={indexStyles.me} src={me}/>
