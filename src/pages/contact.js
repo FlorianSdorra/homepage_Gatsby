@@ -29,9 +29,11 @@ const ContactPage = () => {
             <Head title="Contact"/>
             <div className={contactStyles.container}>
                 <div className={contactStyles.intro}>
-                    <div className={contactStyles.introEyes}></div>
+                    <div className={contactStyles.introEyes}>
+                        <div className={contactStyles.eyes}></div>
+                    </div>
                     <div className={contactStyles.introText}>
-                        <h1>Contact</h1>
+                        <h1 className={contactStyles.introTextHead}>Contact</h1>
                         <p>If you want to talk, please get in touch with me.</p>
                         <CgArrowLongDownR className={contactStyles.arrow}/>
                     </div>

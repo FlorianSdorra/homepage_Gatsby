@@ -41,11 +41,6 @@
         letter-spacing: .2em;
         margin-bottom: 5em;
     }
-
-    img{
-        height: 200px;
-        padding: 1em;
-    }
 }
 
 @media(min-width: 500px){
@@ -54,6 +49,10 @@
 
         p{
             margin-bottom: 3em;
+        }
+        img{
+            height: 60vh;
+            margin: 2em;
         }
     }
 }
