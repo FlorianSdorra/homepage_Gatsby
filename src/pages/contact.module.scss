@@ -1,106 +1,197 @@
+@keyframes breath {
+    0%   { transform: scale(1);}
+    50% { transform: scale(1.2);}
+    100% { transform: scale(1);}
+  }
 
+@keyframes floatOne {
+	0% {
+        text-shadow: 5px 15px 0px black;
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 25px 15px 0px  rgba(0, 0, 0, 0.8);
+		transform: translatey(10px);
+	}
+	100% {
+		text-shadow: 5px 15px 0px black;
+		transform: translatey(0px);
+	}
+}
 
 .container {
-    padding-top: 10em;
-    min-height: 100vh;
+    padding-top: 6.2em;
     padding-bottom: 32px;
     margin-bottom: -32px;
+    position: relative;
+    z-index: 100;
 }
+
 
 .inner {
     padding: 15px;
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 200;
     
-    h1{
-        text-align: center;
-        text-decoration: overline;
-        font-size: 2.5em;
+    
+}
+
+.intro-eyes{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url('./assets/images/pattern-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.intro-text{
+    width: 100%;
+    padding: 70px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    h1 {
+        font-size: 4em;
+        font-family: 'Bebas Neue';
+        letter-spacing: .2em;
+        color: black;
+        -webkit-text-stroke: 2px black;
+        -webkit-text-fill-color: white;
+        text-shadow:
+        3px 3px 0 #000;
+        transform: translatey(0px) translateX(0px);
+        animation: floatOne 5s ease-in-out infinite;
+    }
+    p {
+        margin-top: 1em;
         font-family: 'Bebas Neue';
         letter-spacing: 7px;
+        word-spacing: .4em;
         color: black;
-    }
-    p{
-        font-family: 'Bebas Neue';
-        letter-spacing: .3em;
         text-align: center;
-        color: black
+    }
+    .arrow {
+        position: absolute;
+        color: black;
+        bottom: -90px;
+        left: 38%;
+        margin: 50px auto;
+        display: block;
+        width: 80px;
+        height: 80px;
     }
 }
-
 .contact-box{
-    margin: 4em 1em;
+    margin: 6em 2em;
     z-index: 666;
-    min-height: 60vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contact-box-bg{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url('./assets/images/backgrounds/abstract-backgrounds-4.jpg');
-    filter: grayscale(40%);
-    
-}
-
-
-.link-box {
-    padding: 1.2em;
-    width: fit-content;
     height: fit-content;
     position: relative;
-    border: 3px solid plum;
-}
-
-.link-box:hover {
-    cursor: pointer;
-}
-
-.link-box-bg{
-    border-radius: 4px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    font-family: 'Bebas Neue';
     background-color: white;
-    opacity: .6;
-    z-index: -1;
+    border-radius: 3px;
+    border: black 2px solid;
+    box-shadow: 7px 5px 2px rgba(224,124,155, 1);
+    h3{
+        text-decoration: underline;
+        color: black;
+        margin-top: 20px;
+        font-size: small;
+        font-family: 'Bebas Neue';
+        letter-spacing: 4px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.phone-box {
+.icons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    p {
-        font-family: 'Bebas Neue';
+    margin: 20px 0;
+    p{
         margin: 0;
-        margin-top: 1em;
-        color: rgb(192, 139, 192);
     }
 }
 
 .icon {
     color: black;
+    margin: 5px 0;
     width: 40px;
     height: 40px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
 }
 
 @media(min-width: 500px){
 
     .container {
+        padding-top: 6em;
         min-height: 100vh;
         padding-bottom: 36px;
         margin-bottom: -36px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .intro-eyes{
+        width: 70%;
+        background-image: url('./assets/images/pattern-01.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .intro-text{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h1 {
+            font-size: 4em;
+            font-family: 'Bebas Neue';
+            letter-spacing: 10px;
+            color: black;
+        }
+        p {
+            font-family: 'Bebas Neue';
+            letter-spacing: 7px;
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+        .arrow {
+            position: absolute;
+            color: black;
+            bottom: -80px;
+            left: 45%;
+            margin: 50px auto;
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
     }
 
     .contact-box {

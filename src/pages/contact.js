@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link, useStaticQuery } from 'gatsby';
+import {Link, useStaticQuery } from 'gatsby';
 import Typed from 'react-typed';
 
 import Layout from '../components/layout';
 import Head from '../components/head';
 import contactStyles from './contact.module.scss';
+import Fade from 'react-reveal/Fade';
 
-import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone, AiOutlineArrowDown } from 'react-icons/ai';
+import {CgArrowLongDownR} from 'react-icons/cg';
 
 const ContactPage = () => {
 
@@ -27,36 +29,27 @@ const ContactPage = () => {
             <Head title="Contact"/>
             <div className={contactStyles.container}>
                 <div className={contactStyles.intro}>
-                    <h1>Contact</h1>
-                    <p className={contactStyles.inner}>
-                    <Typed
-                    strings={[
-                      `Get in touch with me.`
-                    ]}
-                    typeSpeed={50}
-                 />
-                        </p>
+                    <div className={contactStyles.introEyes}>
+                        <div className={contactStyles.eyes}></div>
+                    </div>
+                    <div className={contactStyles.introText}>
+                        <h1 className={contactStyles.introTextHead}>Contact</h1>
+                        <p>If you want to talk, please get in touch with me.</p>
+                        <CgArrowLongDownR className={contactStyles.arrow}/>
+                    </div>
                 </div>
                 <div className={contactStyles.contactBox}>
-                    <div className ={contactStyles.contactBoxBg}></div>
-                    <Link to={data.site.siteMetadata.linkedin} target="blank">
-                        <div className={contactStyles.linkBox}>
-                            <div className={contactStyles.linkBoxBg}></div>   
-                            <AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin>
+                    <div className={contactStyles.contacts}>
+                        <h3>You can reach me via:</h3>
+                        <div className={contactStyles.icons}>
+                            <a href="mailto:fsd114@hnee.de"><AiOutlineMail className={contactStyles.icon}></AiOutlineMail></a>
+                            <Link to={data.site.siteMetadata.linkedin} target="blank"><AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin></Link>
+                            <p className={contactStyles.phone}><AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>:
+                            +4915759608379</p>
                         </div>
-                    </Link>
-                    <a href={data.site.siteMetadata.email} target="blank">
-                        <div className={contactStyles.linkBox}>
-                            <div className={contactStyles.linkBoxBg}></div>      
-                            <AiOutlineMail className={contactStyles.icon}></AiOutlineMail>
-                        </div>
-                    </a>
-                    <div  className={`${contactStyles.linkBox} ${contactStyles.phoneBox}`} target="blank">
-                        <div className={contactStyles.linkBoxBg}></div>
-                        <AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>
-                        <p>+491575960837</p>
                     </div>
-                </div>  
+                </div> 
+                <div className={contactStyles.outroEyes}></div>
             </div>
         </Layout>
     )

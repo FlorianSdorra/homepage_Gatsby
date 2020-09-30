@@ -24,6 +24,8 @@ module.exports = {
           `Libre Caslon Display`,
           `Open Sans`,
           `Poiret One`,
+          `Roboto`,
+          `Roboto Mono`,
           `Cincel`,
           `Raleway`,
           `Raleway Dots`,
