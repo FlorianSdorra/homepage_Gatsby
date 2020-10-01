@@ -42,7 +42,7 @@ const ContactPage = () => {
                     <div className={contactStyles.contacts}>
                         <h3>You can reach me via:</h3>
                         <div className={contactStyles.icons}>
-                            <a href="mailto:fsd114@hnee.de"><AiOutlineMail className={contactStyles.icon}></AiOutlineMail></a>
+                            <a href="mailto:fsd114@posteo.de"><AiOutlineMail className={contactStyles.icon}></AiOutlineMail></a>
                             <Link to={data.site.siteMetadata.linkedin} target="blank"><AiOutlineLinkedin className={contactStyles.icon}></AiOutlineLinkedin></Link>
                             <p className={contactStyles.phone}><AiOutlinePhone className={contactStyles.icon}></AiOutlinePhone>:
                             +4915759608379</p>
