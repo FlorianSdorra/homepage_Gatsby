@@ -135,9 +135,9 @@
 }
 
 .intro-headline{
-    font-size: 5.3em;
-    font-family: 'Bebas Neue';
-    letter-spacing: .4em;
+    font-size: 4em;
+    font-family: 'Dela Gothic One';
+    letter-spacing: .2em;
     text-align: center;
     margin: 1em 0 .9em;
     width: 100%;
@@ -181,18 +181,19 @@
         position: relative;
         z-index: 100;
         // hyphens: auto;
-        font-family: 'Bebas Neue';
+        font-family: 'Dela Gothic One';
         text-align: justify center;
-        letter-spacing: .25em;
         // letter-spacing: .4em;
         // word-spacing: .6em;
         color: rgb(34, 34, 34);
         margin: 0;
         padding: 0;
-        letter-spacing: .2em;
-        word-spacing: .4em;
+        // -webkit-text-stroke: .75px rgb(34, 34, 34);
+        -webkit-text-fill-color: black;
+        // letter-spacing: 2px;
+        // word-spacing: .4em;
     }
-        padding: 0 1em 3em;
+        padding: 0 1em 2em;
 }
 
 .intro-bg{
@@ -355,9 +356,13 @@ p {
         margin: .7em 0 .3em;
     }
     .intro{
+        margin-top: 100px;
         padding: 0 3em 4em;
         p {
             text-align: center;
+            font-size: 2em;
+            line-height: 1.15;
+            font-style: italic;
         }
     }
 }

@@ -18,7 +18,7 @@
     -webkit-animation: move 2000s linear infinite;
     -webkit-transform: translateZ(0);
 
-    background-color: #9d90fc;
+    background-color: #c5aaf7;
     // background-color: lightBlue;
     background-image: url("./assets/images/vasilis1.png"), url("./assets/images/vasilis2.png"), url("./assets/images/vasilis3.png");
     position: absolute;
@@ -52,7 +52,8 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    
+    top: 25vh;
     // justify-content: center;
     padding: 1.2em;
     
@@ -61,13 +62,15 @@
     h1 {
         padding-top: 1.5em;
         color: white;
-        font-family: 'Abril Fatface';
-        font-weight: normal;
+        opacity: .95;
+        font-family: 'Dela Gothic One';
+        font-weight: lighter;
+        font-style: italic;
         font-size: 2.5em;
     }
 
     p {
-        font-family: 'Abril Fatface';
+        font-family: 'Dela Gothic One';
         text-align: center;
         font-size: .9rem;
 }
@@ -103,11 +106,14 @@
     h2 {
         overflow: hidden;
         font-weight: lighter;
-        font-family: 'Libre Caslon Display', serif;
+        font-family: 'Dela Gothic One';
+        font-style: italic;
         font-size: 1.8rem;
         text-align: block;
-        letter-spacing: .05em;
-        word-spacing: .2em;
+        // letter-spacing: .05em;
+        // word-spacing: .2em;
+        -webkit-text-stroke: .75px rgb(34, 34, 34);
+        -webkit-text-fill-color: white;
     }
 }
 
@@ -123,7 +129,9 @@
 
     .intro-wrap {
         padding: 1.2em 1.2em 4em 4em ;
-        max-width: 750px;
+        max-width: 70%;
+        align-items: flex-start;
+        top: 20vh;
         
         
         h1{
@@ -139,7 +147,7 @@
         width: 50vw;
         padding: 4em;
          h2{
-             font-size: 2.3rem;
+             font-size: 2.2rem;
              padding: 2em;
          }
     }

@@ -27,6 +27,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Dela Gothic One\:400`,
           `Comfortaa\:300, 400,500,600,700`,
           `Abril Fatface`,
           `Libre Caslon Display`,
