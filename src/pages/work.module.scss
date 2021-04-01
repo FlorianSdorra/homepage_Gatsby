@@ -139,7 +139,7 @@
     font-family: 'Dela Gothic One';
     letter-spacing: .2em;
     text-align: center;
-    margin: 1em 0 .9em;
+    margin: 1.1em 0 1.2em;
     width: 100%;
     height: fit-content;
     -webkit-text-stroke: 2px rgb(34, 34, 34);
@@ -182,14 +182,16 @@
         z-index: 100;
         // hyphens: auto;
         font-family: 'Dela Gothic One';
-        text-align: justify center;
+        // text-align: center;
         // letter-spacing: .4em;
         // word-spacing: .6em;
         color: rgb(34, 34, 34);
         margin: 0;
         padding: 0;
+        letter-spacing: .05em;
+        word-spacing: .4em;
         // -webkit-text-stroke: .75px rgb(34, 34, 34);
-        -webkit-text-fill-color: black;
+        // -webkit-text-fill-color: black;
         // letter-spacing: 2px;
         // word-spacing: .4em;
     }

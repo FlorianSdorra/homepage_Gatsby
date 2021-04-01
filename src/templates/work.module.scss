@@ -36,12 +36,13 @@
 
 .content{
     margin: 1em;
-    text-align: center;
+    
     font-family: 'Dela Gothic One';
     p{
         letter-spacing: .05em;
         word-spacing: .4em;
         margin-bottom: 5em;
+        color: black;
     }
 }
 
@@ -53,6 +54,7 @@
 
     .content{
         margin: 3em;
+        text-align: center;
 
         p{
             max-width: 80%;
