@@ -18,11 +18,12 @@
     -webkit-animation: move 2000s linear infinite;
     -webkit-transform: translateZ(0);
 
-    background-color: #c5aaf7;
+    background-color: rgb(245, 245, 245);
     // background-color: lightBlue;
     background-image: url("./assets/images/vasilis1.png"), url("./assets/images/vasilis2.png"), url("./assets/images/vasilis3.png");
-    position: absolute;
     
+    position: absolute;
+    opacity: .8;
     height: 100%;
     left: 0;
     top: 0;
@@ -61,7 +62,7 @@
 
     h1 {
         padding-top: 1.5em;
-        color: white;
+        color: black;
         opacity: .95;
         font-family: 'Dela Gothic One';
         font-weight: lighter;
@@ -95,8 +96,9 @@
 
 .me {
     max-height: 20em;
-    border-radius: 40% 2% 25% 2% / 40% 2% 25% 2%;
-    border: rgb(180, 180, 180) 2px solid;
+    border-radius: 5px;
+    border: black 2px solid;
+    box-shadow: 10px 10px 0px rgba(157,144,252, .8);
 }
 
 
@@ -112,7 +114,7 @@
         text-align: block;
         // letter-spacing: .05em;
         // word-spacing: .2em;
-        -webkit-text-stroke: .75px rgb(34, 34, 34);
+        -webkit-text-stroke: .75px black;
         -webkit-text-fill-color: white;
     }
 }
@@ -149,6 +151,7 @@
          h2{
              font-size: 2.2rem;
              padding: 2em;
+             word-spacing: .3em;
          }
     }
 

@@ -19,8 +19,9 @@
 
 
 .introHeadline{
-    font-size: 5em;
-    font-family: 'Bebas Neue';
+    font-size: 4em;
+    font-family: 'dela Gothic One';
+    text-transform: uppercase;
     letter-spacing: .4em;
     color: rgb(34, 34, 34);
     text-align: center;
@@ -36,19 +37,28 @@
 .content{
     margin: 1em;
     text-align: center;
-    font-family: 'Bebas Neue';
+    font-family: 'Dela Gothic One';
     p{
-        letter-spacing: .2em;
+        letter-spacing: .05em;
         word-spacing: .4em;
         margin-bottom: 5em;
     }
 }
 
 @media(min-width: 500px){
+    .introHeadline {
+        font-size: 5em;
+    }
+   
+
     .content{
         margin: 3em;
 
         p{
+            max-width: 80%;
+            margin: 0 auto;
+            font-size: 1.5em;
+            line-height: 1.15;
             margin-bottom: 3em;
         }
         img{

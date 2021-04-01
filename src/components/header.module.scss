@@ -2,15 +2,15 @@
     padding: 1.5rem 0;
     width: 100%;
     background: rgba(255, 255, 255, 0);
-    border-bottom: grey 1px solid;
+    border-bottom: black 2px solid;
     font-family: 'Bebas Neue';
     position: fixed;
     z-index: 667;
     .navbar-toggle {
-        color:rgb(107, 107, 107);
+        color:black;
     }
     .florian {
-        color:rgb(107, 107, 107);
+        color:black
     }
     transition: background-color .4s;
 }
@@ -20,14 +20,15 @@
     width: 100%;
     background: rgb(255, 255, 255);
     font-family: 'Bebas Neue';
-    border-bottom: #999999 1px solid;
+    border-bottom: none;
+    // border-bottom: #999999 1px solid;
     position: fixed;
     z-index: 667;
     .florian {
-        color:rgb(107, 107, 107);
+        color:black;
     }
     .navbar-toggle {
-        color:rgb(107, 107, 107);
+        color:black;
     }
     transition: background-color .7s;
 
@@ -52,11 +53,11 @@
     height: 100vh;
 
     .nav-item{
-        color: rgb(107, 107, 107);
+        color: black;
         letter-spacing: 4px;
     }
     .active-nav-item {
-        color: rgba(107, 107, 107, 0.411);
+        color: grey;
     }
 }
 
@@ -113,7 +114,7 @@
     transition: padding .7s;
 
     .nav-item{
-        color:rgba(34, 11, 11, 0.5);
+        color:black;
     }
 }
 
@@ -152,7 +153,7 @@
 }
 
 .nav-item {
-    color:rgb(80, 80, 80);
+    color:black;
     font-size: 1em;
     font-weight: 550;
     margin-right: 2em;

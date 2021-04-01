@@ -62,8 +62,9 @@
     align-items: center;
     position: relative;
     h1 {
-        font-size: 4em;
-        font-family: 'Bebas Neue';
+        font-size: 2em;
+        font-family: 'Dela Gothic One';
+        text-transform: uppercase;
         letter-spacing: .2em;
         color: black;
         -webkit-text-stroke: 2px black;
@@ -74,9 +75,9 @@
         animation: floatOne 5s ease-in-out infinite;
     }
     p {
-        margin-top: 1em;
-        font-family: 'Bebas Neue';
-        letter-spacing: 7px;
+        margin-top: 3em;
+        font-family: 'Dela Gothic One';
+        letter-spacing: 6px;
         word-spacing: .4em;
         color: black;
         text-align: center;
@@ -101,14 +102,14 @@
     background-color: white;
     border-radius: 3px;
     border: black 2px solid;
-    box-shadow: 7px 5px 2px rgba(224,124,155, 1);
+    box-shadow: 7px 5px 2px rgba(0, 0, 0, 0.836);
     h3{
         text-decoration: underline;
         color: black;
         margin-top: 20px;
         font-size: small;
-        font-family: 'Bebas Neue';
-        letter-spacing: 4px;
+        font-family: 'Dela Gothic One';
+        letter-spacing: 1px;
     }
     display: flex;
     justify-content: center;
@@ -171,13 +172,13 @@
         position: relative;
         h1 {
             font-size: 4em;
-            font-family: 'Bebas Neue';
+            // font-family: 'Bebas Neue';
             letter-spacing: 10px;
             color: black;
         }
         p {
-            font-family: 'Bebas Neue';
-            letter-spacing: 7px;
+            // font-family: 'Bebas Neue';
+            // letter-spacing: 7px;
             padding: 20px;
             color: black;
             text-align: center;
