@@ -29,6 +29,7 @@
     }
     .navbar-toggle {
         color:black;
+        
     }
     transition: background-color .7s;
 
@@ -45,6 +46,7 @@
     list-style-type: none;
     display: block;
     margin: 0;
+    background-color: rgba(255, 255, 255, .9);
     li {
         text-align: center;
         margin: 2em auto;
@@ -60,6 +62,7 @@
     .active-nav-item {
         color: grey;
     }
+    
 }
 
 .nav-item, .title {

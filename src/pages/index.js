@@ -8,7 +8,7 @@ import Head from "../components/head";
 
 import indexStyles from "./index.module.scss";
 
-import me from "./assets/images/me.png"
+import me from "./assets/images/me.jpg"
 
 class IndexPage extends React.Component{
   constructor(props) {
